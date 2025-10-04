@@ -72,3 +72,6 @@ Want more?
 
 I can add a GitHub Actions CI workflow to publish automatically, or help reduce the initial JS bundle size (code-splitting, icon imports). Tell me which you prefer.
 
+
+ci: trigger
+
