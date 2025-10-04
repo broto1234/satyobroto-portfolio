@@ -5,14 +5,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "build:local": "vite build --base ./",
-  "postbuild": "echo > docs/.nojekyll",
-  "deploy": "npm run build && npm run postbuild && gh-pages -d docs",
-  "preview": "npx http-server docs -p 4173",
-  "tailwind:init": "npx tailwindcss init -p"
-  },
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "build:local": "vite build --base ./",
+      "postbuild": "echo > docs/.nojekyll",
+      "deploy": "npm run build && npm run postbuild && gh-pages -d docs",
+      "preview": "npx http-server docs -p 4173",
+      "tailwind:init": "npx tailwindcss init -p"
+    },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
