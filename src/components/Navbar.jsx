@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-40 p-5 bg-background/85 transition-all duration-300">
       <div className="container flex items-center justify-between">
-        <a href="/" className="text-2xl font-bold text-primary flex items-center">
+        <a href="/" className="text-2xl font-bold text-amber-700 flex items-center">
           <span className="relative z-10">
             <span className="text-glow text-foreground">My</span> Portfolio
           </span>

@@ -114,8 +114,8 @@ export const projects = [
     description: 'Explore my web applications, projects, and skills in frontend development.',
     image: '/portfolio.jpg',
     tags: ['React', 'Tailwindcss', 'Vite'],
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: 'https://satyobroto-portfolio.vercel.app/',
+    githubUrl: 'https://github.com/broto1234/satyobroto-portfolio',
   },
   {
     id: 2,
@@ -153,23 +153,13 @@ export const projects = [
     demoUrl: 'https://react-github-user-search-mu.vercel.app/',
     githubUrl: 'https://github.com/broto1234/react-github-user-search',
   },
-  {
-    id: 6,
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my skills and projects.",
-    image: '/portfolioJS.jpg',
-    tags: ['JavaScript', 'CSS', 'HTML'],
-    demoUrl: '',
-    githubUrl: 'https://broto1234.github.io/',
-  }
-  // ,
   // {
   //   id: 6,
   //   title: 'Blog Platform',
   //   description: 'A blog platform where users can create and share posts.',
   //   image: '',
-  //   tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express'],
-  //   demoUrl: '#',
+  //   tags: ['HTML', 'CSS', 'JavaScript'],
+  //   demoUrl: 'https://www.brotodev.com/',
   //   githubUrl: '#',
   // }
  ]

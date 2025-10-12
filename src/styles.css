@@ -7,6 +7,10 @@
   object-fit: cover;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ------------------ ROOT LAYOUT ------------------ */
 #root {
   max-width: 100%;
