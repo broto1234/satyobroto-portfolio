@@ -5,7 +5,7 @@ This repository contains a Vite + React portfolio website. The production build 
 Live site
 ---------
 
-https://broto1234.github.io/satyobroto-portfolio/
+https://satyobroto-portfolio.vercel.app/
 
 Quick start (local)
 -------------------

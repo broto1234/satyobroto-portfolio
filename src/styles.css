@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* ----- BASE STYLES ----- */
+/* img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
 /* ------------------ ROOT LAYOUT ------------------ */
 #root {
   max-width: 100%;
