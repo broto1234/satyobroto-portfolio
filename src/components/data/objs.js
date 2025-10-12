@@ -152,16 +152,7 @@ export const projects = [
     tags: ['React', 'Tailwindcss', 'vite', 'Vercel'],
     demoUrl: 'https://react-github-user-search-mu.vercel.app/',
     githubUrl: 'https://github.com/broto1234/react-github-user-search',
-  },
-  // {
-  //   id: 6,
-  //   title: 'Blog Platform',
-  //   description: 'A blog platform where users can create and share posts.',
-  //   image: '',
-  //   tags: ['HTML', 'CSS', 'JavaScript'],
-  //   demoUrl: 'https://www.brotodev.com/',
-  //   githubUrl: '#',
-  // }
+  }
  ]
   // Contact
   import { MdEmail } from "react-icons/md";
