@@ -11,7 +11,7 @@ export default function Hero() {
             <span className="text-amber-700 opacity-0 animate-fade-in-delay-1"> {strings.fName}</span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> {strings.lName}</span>
           </h1>
-          <p className="text-xl font-medium text-foreground/50 px-12 opacity-0 animate-fade-in-delay-4">
+          <p className="font-medium text-foreground/50 px-12 opacity-0 animate-fade-in-delay-4">
              {strings.shortIntro}
           </p>   
           <img src="/smallpic.png" alt="Satyobroto" className="w-36 h-36 object-cover bg-amber-700 p-2 rounded-full my-10 mx-auto"/>       
