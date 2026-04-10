@@ -16,26 +16,30 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiSass } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
-import { IoLogoPython } from "react-icons/io5";
+// import { IoLogoPython } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { VscVscode } from "react-icons/vsc";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiSqlite } from "react-icons/si";
 
 export const skills = [
-  {id: 1, name: 'HTML', category: 'frontend', logo: IoLogoHtml5},
-  {id: 2, name: 'JavaScript', category: 'frontend', logo: BiLogoJavascript },
-  {id: 3, name: 'React', category: 'frontend', logo: FaReact },
+  {id: 1, name: 'Next.js', category: 'frontend', logo: RiNextjsLine },
+  {id: 2, name: 'React.js', category: 'frontend', logo: FaReact },
+  {id: 3, name: 'Tailwind CSS', category: 'frontend', logo: RiTailwindCssFill },
+  {id: 4, name: 'JavaScript', category: 'frontend', logo: BiLogoJavascript },
   {id: 5, name: 'CSS', category: 'frontend', logo: IoLogoCss3 },
-  {id: 6, name: 'Tailwind CSS', category: 'frontend', logo: RiTailwindCssFill },
   {id: 7, name: 'Sass', category: 'frontend', logo: SiSass },
+  {id: 8, name: 'HTML', category: 'frontend', logo: IoLogoHtml5},
 
-  {id: 4, name: 'Node.js', category: 'backend', logo: FaNodeJs },
-  {id: 8, name: 'Express', category: 'backend', logo: SiExpress },
-  {id: 9, name: 'Python', category: 'backend', logo: IoLogoPython },
+  {id: 9, name: 'Node.js', category: 'backend', logo: FaNodeJs },
+  {id: 10, name: 'Express', category: 'backend', logo: SiExpress },
+  {id: 11, name: 'SQLite', category: 'backend', logo: SiSqlite },
+  // {id: 12, name: 'Python', category: 'backend', logo: IoLogoPython },
 
-  {id: 10, name: 'VS Code', category: 'tools', logo: VscVscode },
-  {id: 11, name: 'Git/GitHub', category: 'tools', logo: FaGithub },
-  {id: 12, name: 'Figma', category: 'tools', logo: IoLogoFigma },
+  {id: 12, name: 'VS Code', category: 'tools', logo: VscVscode },
+  {id: 13, name: 'Git/GitHub', category: 'tools', logo: FaGithub },
+  {id: 14, name: 'Figma', category: 'tools', logo: IoLogoFigma },
 ];
 
 // Education
@@ -43,7 +47,7 @@ export const educations = [
   {
     id: 1,
     course: "Web Development",
-    time: "2024 - feb.2026",
+    time: "Aug 2024 - Mar 2026",
     inst: "Roskilde Tekniske Skole, Denmark"
   },
   {
@@ -110,49 +114,68 @@ export const Certifications = [
 export const projects = [
   {
     id: 1,
-    title: 'My Portfolio',
-    description: 'Explore my web applications, projects, and skills in frontend development.',
+    title: 'Landrup Dans – Dance Activity Management Platform',
+    description: 'A full-stack application demonstrating JWT authentication, role-based access, CRUD operations, and integration with an external REST API.',
+    image: '/landrupDans.jpg',
+    tags: ['Next.js', 'Tailwindcss', 'Zod', 'JWT', 'REST API'],
+    demoUrl: 'https://landrup-dans-omega.vercel.app',
+    githubUrl: 'https://github.com/broto1234/landrup-dans',
+  },
+  {
+    id: 2,
+    title: 'Personal Portfolio Website',
+    description: 'A responsive portfolio website built with React and TailwindCSS to showcase projects, technical skills, and frontend development experience.',
     image: '/portfolio.jpg',
-    tags: ['React', 'Tailwindcss', 'Vite'],
+    tags: ['React', 'Tailwindcss', 'Responsive Design'],
     demoUrl: 'https://satyobroto-portfolio.vercel.app/',
     githubUrl: 'https://github.com/broto1234/satyobroto-portfolio',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Real Estate Web App',
     description: 'A modern house selling website where users can browse properties and save their favorites after logging in.',
     image: '/realState.jpg',
-    tags: ['React', 'Tailwindcss', 'Vite'],
+    tags: ['React', 'Tailwindcss', 'Fetch API'],
     demoUrl: 'https://your-dream-home.netlify.app/',
     githubUrl: 'https://github.com/rts-cmk-wu13/dinmaegler-broto1234',
   },
   {
-    id: 3,
+    id: 4,
+    title: "GitHub user's search app",
+    description: "Users can search for GitHub profiles by username and view relevant public information pulled from GitHub’s API.",
+    image: '/githubUser.jpg',
+    tags: ['React', 'Tailwindcss', 'Fetch API'],
+    demoUrl: 'https://react-github-user-search-mu.vercel.app/',
+    githubUrl: 'https://github.com/broto1234/react-github-user-search',
+  },
+  {
+    id: 5,
     title: 'Pokédex',
     description: 'A responsive and dynamic website that fetchs data from the "PokéAPI"',
     image: '/pokedex.jpg',
-    tags: ['JavaScript', 'CSS', 'Netlify'],
+    tags: ['JavaScript', 'CSS', 'Fetch API'],
     demoUrl: 'https://my-project-pokedex.netlify.app/',
     githubUrl: 'https://github.com/rts-cmk-wu13/pokedex-broto1234',
   },  
   {
-    id: 4,
+    id: 6,
     title: 'My movie App',
     description: 'A movie application that fetches data from "The Movie Database".',
     image: '/myMovie.jpg',
-    tags: ['JavaScript', 'CSS', 'Netlify'],
+    tags: ['JavaScript', 'CSS', 'Fetch API'],
     demoUrl: 'https://themovie-db-app.netlify.app/',
     githubUrl: 'https://github.com/rts-cmk-wu13/mymovie-broto1234',
-  },
-  {
-    id: 5,
-    title: "GitHub user's search app",
-    description: "Users can search for GitHub profiles by username and view relevant public information pulled from GitHub’s API.",
-    image: '/githubUser.jpg',
-    tags: ['React', 'Tailwindcss', 'vite', 'Vercel'],
-    demoUrl: 'https://react-github-user-search-mu.vercel.app/',
-    githubUrl: 'https://github.com/broto1234/react-github-user-search',
-  }
+  }  
+  // ,
+  // {
+  //   id: 6,
+  //   title: "HiFi Horizon — Full-Stack React & Express API Project",
+  //   description: "A full-stack React application that consumes a custom RESTful API built with Express and deployed on Render. Includes product, user, and newsletter endpoints with real-time data fetching via React Router loaders.",
+  //   image: '',
+  //   tags: ['React', 'Tailwindcss', 'vite', 'Express', 'Render'],
+  //   demoUrl: '',
+  //   githubUrl: '',
+  // }
  ]
   // Contact
   import { MdEmail } from "react-icons/md";
