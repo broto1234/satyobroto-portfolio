@@ -20,24 +20,70 @@ export default function Project() {
                 <div className="h-48 overflow-hidden">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                 </div>
-                <div className="md:h-60 p-6 flex flex-col justify-between">
+                <div className="md:h-60 px-2 py-4 flex flex-col justify-between">
                   <div className="flex flex-wrap justify-center gap-2">
                     {project.tags.map(tag => (
-                      <span key={tag} className="px-2 py-1 bg-secondary text-xs font-medium rounded-full text-secondary-foreground">
+                      <span key={tag} className="px-1 py-1 bg-secondary text-xs font-medium rounded-full text-secondary-foreground">
                       {tag}
                       </span>
                     ))}
                   </div>
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                   <p className="text-muted-foreground text-sm">{project.description}</p>
-                  <div className="flex justify-between items-center">
-                    <div className="flex space-x-3">
-                      <a href={project.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                        <FaExternalLinkAlt size={20}/>
+                  
+                  <div className="mt-1 flex justify-center">
+                    <div className="flex flex-wrap justify-center items-center gap-3">
+                      <span>Frontend:</span>
+
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Frontend Live Demo"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <FaExternalLinkAlt size={20} />
                       </a>
-                      <a href={project.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                        <FaGithub size={20}/>
+
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Frontend GitHub"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <FaGithub size={20} />
                       </a>
+
+                      {(project.demoUrlBackend || project.githubUrlBackend) && (
+                        <>
+                          <span>| Backend:</span>
+
+                          {project.demoUrlBackend && (
+                            <a
+                              href={project.demoUrlBackend}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="Backend Live Demo"
+                              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            >
+                              <FaExternalLinkAlt size={20} />
+                            </a>
+                          )}
+
+                          {project.githubUrlBackend && (
+                            <a
+                              href={project.githubUrlBackend}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="Backend GitHub"
+                              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            >
+                              <FaGithub size={20} />
+                            </a>
+                          )}
+                        </>
+                      )}
                     </div>
                   </div>
                 </div>

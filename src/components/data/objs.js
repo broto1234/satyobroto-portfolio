@@ -8,38 +8,44 @@ export const navItems = [
 ];
 
 // Skills Items
-import { IoLogoHtml5 } from "react-icons/io5";
-import { BiLogoJavascript } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiSass } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa6";
-import { SiExpress } from "react-icons/si";
-// import { IoLogoPython } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
-import { IoLogoFigma } from "react-icons/io5";
-import { VscVscode } from "react-icons/vsc";
-import { RiNextjsLine } from "react-icons/ri";
-import { SiSqlite } from "react-icons/si";
+import { RiNextjsLine } from 'react-icons/ri';
+import { FaReact, FaNodeJs, FaGithub, FaCode, FaKey } from 'react-icons/fa';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { BiLogoJavascript } from 'react-icons/bi';
+import { IoLogoCss3, IoLogoHtml5, IoLogoFigma } from 'react-icons/io5';
+import { SiSass, SiExpress, SiTypescript, SiZod, SiPrisma, SiPostgresql, SiSqlite, SiRedis, SiDocker, SiSwagger } from 'react-icons/si';
+import { VscVscode } from 'react-icons/vsc';
 
 export const skills = [
-  {id: 1, name: 'Next.js', category: 'frontend', logo: RiNextjsLine },
-  {id: 2, name: 'React.js', category: 'frontend', logo: FaReact },
-  {id: 3, name: 'Tailwind CSS', category: 'frontend', logo: RiTailwindCssFill },
-  {id: 4, name: 'JavaScript', category: 'frontend', logo: BiLogoJavascript },
-  {id: 5, name: 'CSS', category: 'frontend', logo: IoLogoCss3 },
-  {id: 7, name: 'Sass', category: 'frontend', logo: SiSass },
-  {id: 8, name: 'HTML', category: 'frontend', logo: IoLogoHtml5},
+  // Frontend
+  { id: 1, name: 'Next.js', category: 'frontend', logo: RiNextjsLine },
+  { id: 2, name: 'React.js', category: 'frontend', logo: FaReact },
+  { id: 3, name: 'TypeScript', category: 'frontend', logo: SiTypescript },
+  { id: 4, name: 'JavaScript', category: 'frontend', logo: BiLogoJavascript },
+  { id: 5, name: 'Tailwind CSS', category: 'frontend', logo: RiTailwindCssFill },
+  { id: 6, name: 'CSS', category: 'frontend', logo: IoLogoCss3 },
+  { id: 7, name: 'Sass', category: 'frontend', logo: SiSass },
+  { id: 8, name: 'HTML', category: 'frontend', logo: IoLogoHtml5 },
+  { id: 9, name: 'Zod', category: 'frontend', logo: SiZod },
 
-  {id: 9, name: 'Node.js', category: 'backend', logo: FaNodeJs },
-  {id: 10, name: 'Express', category: 'backend', logo: SiExpress },
-  {id: 11, name: 'SQLite', category: 'backend', logo: SiSqlite },
-  // {id: 12, name: 'Python', category: 'backend', logo: IoLogoPython },
+  // Backend
+  { id: 10, name: 'Node.js', category: 'backend', logo: FaNodeJs },
+  { id: 11, name: 'Express.js', category: 'backend', logo: SiExpress },
+  { id: 12, name: 'REST API', category: 'backend', logo: FaCode },
+  { id: 13, name: 'JWT', category: 'backend', logo: FaKey },
+  { id: 14, name: 'Prisma ORM', category: 'backend', logo: SiPrisma },
 
-  {id: 12, name: 'VS Code', category: 'tools', logo: VscVscode },
-  {id: 13, name: 'Git/GitHub', category: 'tools', logo: FaGithub },
-  {id: 14, name: 'Figma', category: 'tools', logo: IoLogoFigma },
+  // Database
+  { id: 15, name: 'PostgreSQL', category: 'backend', logo: SiPostgresql },
+  { id: 16, name: 'SQLite', category: 'backend', logo: SiSqlite },
+  { id: 17, name: 'Redis', category: 'backend', logo: SiRedis },
+
+  // Tools & Infrastructure
+  { id: 18, name: 'Git/GitHub', category: 'tools', logo: FaGithub },
+  { id: 19, name: 'VS Code', category: 'tools', logo: VscVscode },
+  { id: 20, name: 'Docker', category: 'tools', logo: SiDocker },
+  { id: 21, name: 'Swagger', category: 'tools', logo: SiSwagger },
+  { id: 22, name: 'Figma', category: 'tools', logo: IoLogoFigma },
 ];
 
 // Education
@@ -114,6 +120,17 @@ export const Certifications = [
 export const projects = [
   {
     id: 1,
+    title: 'TaskFlow – Full-Stack Task Management Platform',
+    description: 'A productivity platform designed to simplify task organization, track progress, and help users stay focused on their daily goals.',
+    image: '/taskflow.png',
+    tags: ['Next', 'TypeScript', 'Express', 'PostgreSQL', 'Prisma', 'Redis'],
+    demoUrl: 'https://taskflow-satyobroto.vercel.app',
+    githubUrl: 'https://github.com/broto1234/taskflow-frontend',
+    demoUrlBackend: 'https://taskflow-api-c3hg.onrender.com/',
+    githubUrlBackend: 'https://github.com/broto1234/taskflow-api',
+  },
+  {
+    id: 2,
     title: 'Landrup Dans – Dance Activity Management Platform',
     description: 'A full-stack application demonstrating JWT authentication, role-based access, CRUD operations, and integration with an external REST API.',
     image: '/landrupDans.jpg',
@@ -122,7 +139,7 @@ export const projects = [
     githubUrl: 'https://github.com/broto1234/landrup-dans',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Personal Portfolio Website',
     description: 'A responsive portfolio website built with React and TailwindCSS to showcase projects, technical skills, and frontend development experience.',
     image: '/portfolio.jpg',
@@ -131,7 +148,7 @@ export const projects = [
     githubUrl: 'https://github.com/broto1234/satyobroto-portfolio',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Real Estate Web App',
     description: 'A modern house selling website where users can browse properties and save their favorites after logging in.',
     image: '/realState.jpg',
@@ -140,7 +157,7 @@ export const projects = [
     githubUrl: 'https://github.com/rts-cmk-wu13/dinmaegler-broto1234',
   },
   {
-    id: 4,
+    id: 5,
     title: "GitHub user's search app",
     description: "Users can search for GitHub profiles by username and view relevant public information pulled from GitHub’s API.",
     image: '/githubUser.jpg',
@@ -149,7 +166,7 @@ export const projects = [
     githubUrl: 'https://github.com/broto1234/react-github-user-search',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Pokédex',
     description: 'A responsive and dynamic website that fetchs data from the "PokéAPI"',
     image: '/pokedex.jpg',
@@ -158,7 +175,7 @@ export const projects = [
     githubUrl: 'https://github.com/rts-cmk-wu13/pokedex-broto1234',
   },  
   {
-    id: 6,
+    id: 7,
     title: 'My movie App',
     description: 'A movie application that fetches data from "The Movie Database".',
     image: '/myMovie.jpg',
